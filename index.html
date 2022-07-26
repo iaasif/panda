@@ -7,6 +7,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 
     <header>
         <!-- nav bar start  -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -30,13 +31,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BackPack</a>
+                            <a class="nav-link" href="#backpack">BackPack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#sub">Subscribe</a>
                         </li>
 
 
@@ -54,7 +55,7 @@
     <section class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active bg-info p-5 border rounded p-5">
+                <div class="carousel-item active panda-bg p-5 border rounded p-5">
                     <div class="row">
                         <div class="col-lg-7 d-flex align-items-center  ">
                             <div>
@@ -64,7 +65,7 @@
                                     front
                                     of funky world. </p>
                                 <h1> $400 </h1>
-                                <div class="btn btn-warning"> by me </div>
+                                <div class="btn panda-btn"> Buy Now </div>
                             </div>
                         </div>
                         <div class="col-lg-5">
@@ -73,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active bg-info p-5 border rounded p-5">
+                <div class="carousel-item active panda-bg p-5 border rounded p-5">
                     <div class="row">
                         <div class="col-lg-7 d-flex align-items-center  ">
                             <div>
@@ -82,7 +83,7 @@
                                 <p> This is the best tv in the world for people who just want to waste time in front of
                                     tv. </p>
                                 <h1> $400 </h1>
-                                <div class="btn btn-warning"> by me </div>
+                                <div class="btn panda-btn"> by me </div>
                             </div>
                         </div>
                         <div class="col-lg-5">
@@ -91,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item active bg-info p-5 border rounded p-5">
+                <div class="carousel-item active panda-bg p-5 border rounded p-5">
                     <div class="row">
                         <div class="col-lg-7 d-flex align-items-center  ">
                             <div>
@@ -101,7 +102,7 @@
                                     of fake sports.
                                 </p>
                                 <h1> $400 </h1>
-                                <div class="btn btn-warning"> by me </div>
+                                <div class="btn panda-btn"> Buy Now </div>
                             </div>
                         </div>
                         <div class="col-lg-5">
@@ -132,7 +133,7 @@
 
         <section>
             <div class="container overflow-hidden text-center my-5">
-                <div class="row gy-5">
+                <div class="row gy-5 categories">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="p-3 border bg-warning rounded-3 d-flex align-items-center justify-content-around">
                             <h1 class="text-white">
@@ -142,7 +143,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
-                        <div class="  p-3 border  rounded-3 d-flex align-items-center justify-content-around bg-info">
+                        <div class="  p-3 border  rounded-3 d-flex align-items-center justify-content-around bg-primary">
                             <h1 class="text-white">
                                 Bags
                             </h1>
@@ -173,7 +174,7 @@
 
         <!-- shoes section start  -->
 
-        <section class="container ">
+        <section class="container " id="shoes">
             <h2>Shoes</h2>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-5">
@@ -187,7 +188,7 @@
                                 to additional</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-danger  ">
+                            <div class="btn panda-btn  ">
                                 Buy now
                             </div>
                         </div>
@@ -204,7 +205,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-danger  ">
+                            <div class="btn panda-btn ">
                                 Buy now
                             </div>
                         </div>
@@ -220,7 +221,7 @@
                                 additional.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-danger  ">
+                            <div class="btn panda-btn  ">
                                 Buy now
                             </div>
                         </div>
@@ -237,7 +238,7 @@
         <!-- 
             <h2>$300</h2>BackPack seciton start -->
 
-        <section class="container ">
+        <section class="container  " id="backpack">
             <h2>BackPack</h2>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-5">
@@ -251,7 +252,7 @@
                                 to additional</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-danger  ">
+                            <div class="btn panda-btn  ">
                                 Buy now
                             </div>
                         </div>
@@ -267,7 +268,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-danger  ">
+                            <div class="btn panda-btn  ">
                                 Buy now
                             </div>
                         </div>
@@ -283,7 +284,7 @@
                                 additional.</p>
                         </div>
                         <div class="m-3">
-                            <div class="btn btn-danger  ">
+                            <div class="btn panda-btn  ">
                                 Buy now
                             </div>
                         </div>
@@ -295,15 +296,39 @@
         </section>
         <!-- BackPack seciton end -->
 
+
+
+
+        <!-- subscribe section start -->
+
+        <section id="sub" style="height:300px ;"
+            class=" rounded-3 container panda-bg d-flex  align-items-center justify-content-center ">
+            <div>
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>
+                    get update on sales!
+                </p>
+                <form>
+                    <div class=" mb-3">
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                        <button type="submit" class="btn panda-btn mt-2">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- subscribe section end -->
+
     </main>
 
 
 
 
 
+    <footer class="mt-5 text-center ">
+        <p><small> ©2022. Panda Commerce. All rights reserved. Sofia, Bulgaria. </small></p>
+    </footer>
 
-
-    <h1>Hello, world!</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
